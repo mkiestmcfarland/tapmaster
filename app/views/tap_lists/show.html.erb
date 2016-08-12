@@ -1,0 +1,11 @@
+<table class="table table-striped table-responsive">
+  <% @tap_list.taps.each do |tap|  %>
+      <% beverage = tap.beverage %>
+  <tr>
+    <td><%= tap.position%></td>
+    <td><%=beverage.name%></td>
+    <td><%=beverage.abv%></td>
+    <td><%=beverage.ibu%></td>
+  </tr>
+  <% end %>
+</table>
